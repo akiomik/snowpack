@@ -287,7 +287,7 @@ To develop and test a Snowpack plugin, the strategy is the same as with other np
 - Create a new, example Snowpack project in a different location for testing
 - In your example Snowpack project, run `npm install && npm link my-snowpack-plugin` (use the name from your plugin’s `package.json`).
   - Be aware that `npm install` will remove your linked plugin, so on any install, you will need to redo the `npm link my-snowpack-plugin`.
-  - (The alternative would be to use `npm install --save-dev &lt;folder_to_your_plugin_project&gt;`, which would create the "symlink-like" entry in your example Snowpack project’s `package.json`)
+  - (The alternative would be to use `npm install --save-dev <folder_to_your_plugin_project>`, which would create the "symlink-like" entry in your example Snowpack project’s `package.json`)
 
 In your example Snowpack project, add your plugin to the `snowpack.config.mjs` along with any plugin options you’d like to test:
 
